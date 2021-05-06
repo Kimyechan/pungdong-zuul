@@ -1,0 +1,26 @@
+server:
+  port: 8080
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://13.209.209.29:8761/eureka/
+
+security:
+  oauth2:
+    client:
+      client-id: auth_id
+      client-secret: auth_secret
+    resource:
+      jwt:
+        key-value: jwt_secret_key
+
+spring:
+  application:
+    name: msa-api-gateway
+
+zuul:
+  routes:
+    msa-legacy-service:
+      path: /api/v1/**
+  sensitiveHeaders: Cookie,Set-Cookie
