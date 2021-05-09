@@ -23,4 +23,4 @@ zuul:
   routes:
     msa-legacy-service:
       path: /**
-  sensitiveHeaders: Cookie,Set-Cookie
+  sensitiveHeaders: Cookie,Set-Cookie,Authorization
