@@ -22,5 +22,5 @@ spring:
 zuul:
   routes:
     msa-legacy-service:
-      path: /api/v1/**
+      path: /**
   sensitiveHeaders: Cookie,Set-Cookie
