@@ -2,6 +2,9 @@ server:
   port: 8081
 
 eureka:
+  instance:
+    prefer-ip-address: true
+    ip-address: 52.79.225.4
   client:
     serviceUrl:
       defaultZone: http://13.209.209.29:8761/eureka/
