@@ -14,6 +14,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 @SpringBootApplication
 public class ZuulApplication {
     public static final String APPLICATION_LOCATIONS = "spring.config.location="
+            + "classpath:application.yml,"
             + "/home/ubuntu/config/project/zuul/eureka.yml";
 
     public static void main(String[] args) {
