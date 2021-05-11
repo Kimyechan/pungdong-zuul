@@ -13,6 +13,7 @@ class ResourceServerConfig extends ResourceServerConfigurerAdapter {
     public void configure(HttpSecurity http) throws Exception {
         http.headers().frameOptions().disable();
         http.authorizeRequests()
+                .antMatchers("/**").permitAll()
                 .antMatchers("/api/user").authenticated();
     }
 }
