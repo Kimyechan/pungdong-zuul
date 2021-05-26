@@ -22,14 +22,6 @@ spring:
   application:
     name: msa-api-gateway
 
-#zuul:
-#  host:
-#    connect-timeout-millis: 10000
-#  routes:
-#    msa-legacy-service:
-#      path: /**
-#  sensitiveHeaders: Cookie,Set-Cookie,Authorization
-
 zuul:
   host:
     connect-timeout-millis: 10000
@@ -37,7 +29,7 @@ zuul:
   routes:
     msa-legacy-service:
       path: /**
-  sensitiveHeaders: Cookie,Set-Cookie,Authorization
+  sensitiveHeaders:
 
 hystrix:
   command:
