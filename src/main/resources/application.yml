@@ -27,6 +27,8 @@ zuul:
     connect-timeout-millis: 10000
     socket-timeout-millis: 60000
   routes:
+    msa-community:
+      path: /community/**
     msa-legacy-service:
       path: /**
   sensitiveHeaders:
