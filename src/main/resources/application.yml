@@ -29,7 +29,7 @@ spring:
 zuul:
   host:
     connect-timeout-millis: 10000
-    socket-timeout-millis: 60000
+    socket-timeout-millis: 10000
   routes:
     msa-community-service:
       path: /community/**
@@ -44,7 +44,7 @@ hystrix:
       execution:
         isolation:
           thread:
-            timeoutInMilliseconds: 60000
+            timeoutInMilliseconds: 10000
 
 ribbon:
   ConnectTimeout: 10000
